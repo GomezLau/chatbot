@@ -3,15 +3,15 @@ import './App.css';
 //1
 
 function App() {
-  const [inputText, setInputText] = useState('');
-  const [chatMessages, setChatMessages] = useState([]);
+  const [inputText, setInputText] = useState(''); //Almacena el texto que ingresa el usuario
+  const [chatMessages, setChatMessages] = useState([]); //Almacena la conversacion
 //2
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);
-  };
+  }; //Almacena la entrada en el estado inputText
 
-  const getRandomBotResponse = () => {
+  const getRandomBotResponse = () => { //Respuesta aleatoria del bot para testear
     const botResponses = [
       'Bot: Hola, ¿en qué puedo ayudarte?',
       'Bot: Cuéntame más sobre tu pregunta.',
